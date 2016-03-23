@@ -10,7 +10,7 @@ import { Notification } from './notification';
 import { TaskFilters } from './task-filters';
 import { TaskForm } from './task-form';
 import { TaskList } from './task-list';
-
+import Dashboard from '../dashboard/dashboard';
 
 export class Tasks extends Component {
   componentWillMount() {
@@ -58,6 +58,13 @@ export class Tasks extends Component {
             tasks={tasks}
             updateTask={updateTask} />
         </div>
+        {/*
+        <div className="g-row">
+          <div className="g-col">
+            <Dashboard />
+          </div>
+        </div>
+        */}
 
         {notification.display ? this.renderNotification() : null}
       </div>

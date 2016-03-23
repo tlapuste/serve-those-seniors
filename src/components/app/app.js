@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { POST_SIGN_IN_PATH, POST_SIGN_OUT_PATH } from 'config';
 import { authActions } from 'core/auth';
+import { Link } from 'react-router';
 
 
 export class App extends Component {
@@ -39,7 +40,7 @@ export class App extends Component {
         <header className="header">
           <div className="g-row">
             <div className="g-col">
-              <h1 className="header__title">Service Those Seniors</h1>
+              <h1 className="header__title">Serve the Seniors</h1>
 
               <ul className="header__links">
                 {auth.authenticated ? <li><a className="header__link" onClick={this.signOut} href="#">Sign out</a></li> : null}
